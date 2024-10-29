@@ -1,0 +1,94 @@
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+h2.azc_t {
+  margin: 2em 0 0 0;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+#azc_t {
+  list-style: none;
+  margin: 50px 0 30px 180px;
+  padding-left: 30px;
+  border-left: 2px solid #007FFF;
+}
+#azc_t li {
+  margin: 40px 0;
+  position: relative;
+}
+#azc_t p {
+  margin: 0 0 15px;
+}
+
+.azc_t_date {
+  margin-top: 2px;
+  top: 50%;
+  left: -150px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+}
+
+.azc_t_circle {
+  margin-top: 7px;
+  top: 50%;
+  left: -36px;
+  width: 10px;
+  height: 10px;
+  background: #FFF;
+  border: 2px solid #007FFF;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.azc_t_content {
+  padding: 50px 20px 0;
+}
+.azc_t_content p {
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+label.azc_t {
+  font-size: 1.3em;
+  position: absolute;
+  top: 20px;
+}
+
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+@media screen and (max-width: 767px) {
+  #azc_t {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+  #azc_t li {
+    margin: 50px 0;
+  }
+
+  label.azc_t {
+    width: 85%;
+    font-size: 1.1em;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .azc_t_content {
+    padding-top: 45px;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .azc_t_circle, .azc_t_date {
+    display: none;
+  }
+}
